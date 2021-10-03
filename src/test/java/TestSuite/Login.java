@@ -4,8 +4,8 @@ import org.testng.annotations.Test;
 
 import com.zigwheels.webpages.LoginPage;
 
-public class LoginTest {
-	@Test
+public class Login {
+	
 	public void testingLogin() throws Exception {
 		LoginPage l = new LoginPage();
 		/*********** To open the zigwheel web application **************/

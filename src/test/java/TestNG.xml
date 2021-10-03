@@ -1,20 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 <suite name="Identify New Bikes">
-	<test name="Smoke Testing">
+	<test name="RegressionTesting">
 		<classes>
-			<class name="com.zigwheels.base.Base" />
-			<class name="TestSuite.SmokeTest" />
-		</classes>
-	</test>
-
-
-	<test name="FunctionalTesting">
-		<classes>
-			<class name="com.zigwheels.base.Base" />
-			<class name="TestSuite.BikesTest" />
-			<class name="TestSuite.UsedCarsTest" />
-			<class name="TestSuite.LoginTest" />
+			<class name="TestSuite.FinalTest" />
 		</classes>
 	</test>
 </suite>

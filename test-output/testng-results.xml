@@ -1,47 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-10-01T19:00:09 IST" name="Identify New Bikes" finished-at="2021-10-01T19:01:49 IST" duration-ms="100099">
+  <suite started-at="2021-10-02T18:27:25 IST" name="Identify New Bikes" finished-at="2021-10-02T18:31:48 IST" duration-ms="263249">
     <groups>
     </groups>
-    <test started-at="2021-10-01T19:00:09 IST" name="Smoke Testing" finished-at="2021-10-01T19:00:56 IST" duration-ms="46522">
-      <class name="TestSuite.SmokeTest">
-        <test-method signature="testing()[pri:0, instance:TestSuite.SmokeTest@2fb0623e]" started-at="2021-10-01T19:00:09 IST" name="testing" finished-at="2021-10-01T19:00:56 IST" duration-ms="46415" status="PASS">
+    <test started-at="2021-10-02T18:27:25 IST" name="FunctionalTesting" finished-at="2021-10-02T18:31:48 IST" duration-ms="263249">
+      <class name="TestSuite.TestFinal">
+        <test-method signature="basic()[pri:0, instance:TestSuite.TestFinal@23f5b5dc]" started-at="2021-10-02T18:27:25 IST" name="basic" finished-at="2021-10-02T18:27:27 IST" duration-ms="2623" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basic -->
+        <test-method signature="testing()[pri:1, instance:TestSuite.TestFinal@23f5b5dc]" started-at="2021-10-02T18:27:27 IST" name="testing" finished-at="2021-10-02T18:30:24 IST" duration-ms="176933" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testing -->
-      </class> <!-- TestSuite.SmokeTest -->
-    </test> <!-- Smoke Testing -->
-    <test started-at="2021-10-01T19:00:56 IST" name="FunctionalTesting" finished-at="2021-10-01T19:01:49 IST" duration-ms="53450">
-      <class name="TestSuite.BikesTest">
-        <test-method signature="testing()[pri:0, instance:TestSuite.BikesTest@68878f6d]" started-at="2021-10-01T19:00:56 IST" name="testing" finished-at="2021-10-01T19:01:09 IST" duration-ms="13582" status="PASS">
+        <test-method signature="testing1()[pri:2, instance:TestSuite.TestFinal@23f5b5dc]" started-at="2021-10-02T18:30:24 IST" name="testing1" finished-at="2021-10-02T18:30:43 IST" duration-ms="18781" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testing -->
-      </class> <!-- TestSuite.BikesTest -->
-      <class name="com.zigwheels.base.Base">
-        <test-method is-config="true" signature="driverSetup()[pri:0, instance:com.zigwheels.base.Base@2f01783a]" started-at="2021-10-01T19:00:05 IST" name="driverSetup" finished-at="2021-10-01T19:00:09 IST" duration-ms="4143" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverSetup -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.zigwheels.base.Base@2f01783a]" started-at="2021-10-01T19:01:49 IST" name="closeBrowser" finished-at="2021-10-01T19:01:51 IST" duration-ms="2130" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- com.zigwheels.base.Base -->
-      <class name="TestSuite.LoginTest">
-        <test-method signature="testingLogin()[pri:0, instance:TestSuite.LoginTest@a8ef162]" started-at="2021-10-01T19:01:34 IST" name="testingLogin" finished-at="2021-10-01T19:01:49 IST" duration-ms="15446" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testingLogin -->
-      </class> <!-- TestSuite.LoginTest -->
-      <class name="TestSuite.UsedCarsTest">
-        <test-method signature="testingCars()[pri:0, instance:TestSuite.UsedCarsTest@41488b16]" started-at="2021-10-01T19:01:09 IST" name="testingCars" finished-at="2021-10-01T19:01:34 IST" duration-ms="24405" status="PASS">
+        </test-method> <!-- testing1 -->
+        <test-method signature="testingCars()[pri:3, instance:TestSuite.TestFinal@23f5b5dc]" started-at="2021-10-02T18:30:43 IST" name="testingCars" finished-at="2021-10-02T18:31:18 IST" duration-ms="35184" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testingCars -->
-      </class> <!-- TestSuite.UsedCarsTest -->
+        <test-method signature="testingLogin()[pri:4, instance:TestSuite.TestFinal@23f5b5dc]" started-at="2021-10-02T18:31:18 IST" name="testingLogin" finished-at="2021-10-02T18:31:45 IST" duration-ms="26855" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testingLogin -->
+        <test-method signature="lastStep()[pri:5, instance:TestSuite.TestFinal@23f5b5dc]" started-at="2021-10-02T18:31:45 IST" name="lastStep" finished-at="2021-10-02T18:31:48 IST" duration-ms="2809" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lastStep -->
+      </class> <!-- TestSuite.TestFinal -->
     </test> <!-- FunctionalTesting -->
   </suite> <!-- Identify New Bikes -->
 </testng-results>

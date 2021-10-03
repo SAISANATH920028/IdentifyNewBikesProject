@@ -6,13 +6,11 @@ import org.testng.annotations.Test;
 
 import com.zigwheels.webpages.HondaDetails;
 
-public class BikesTest {
+public class Bikes {
 
-	@Test
-	public void testing() throws Exception {
+	
+	public void testingBikes() throws Exception {
 		HondaDetails hd = new HondaDetails();
-
-		 //hd.driverSetup();
 
 		/*********** To open the zigwheel web application **************/
 		hd.openUrl();

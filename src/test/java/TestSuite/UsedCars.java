@@ -6,8 +6,8 @@ import org.testng.annotations.Test;
 
 import com.zigwheels.webpages.ChennaiUsedCars;
 
-public class UsedCarsTest {
-	@Test
+public class UsedCars {
+	
 	public void testingCars() throws Exception {
 		ChennaiUsedCars cu = new ChennaiUsedCars();
 

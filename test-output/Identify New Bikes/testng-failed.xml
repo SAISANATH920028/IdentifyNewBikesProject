@@ -3,21 +3,11 @@
 <suite name="Failed suite [Identify New Bikes]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="FunctionalTesting(failed)">
     <classes>
-      <class name="TestSuite.UsedCarsTest">
-        <methods>
-          <include name="testingCars"/>
-        </methods>
-      </class> <!-- TestSuite.UsedCarsTest -->
       <class name="TestSuite.LoginTest">
         <methods>
           <include name="testingLogin"/>
         </methods>
       </class> <!-- TestSuite.LoginTest -->
-      <class name="TestSuite.BikesTest">
-        <methods>
-          <include name="testing"/>
-        </methods>
-      </class> <!-- TestSuite.BikesTest -->
     </classes>
   </test> <!-- FunctionalTesting(failed) -->
 </suite> <!-- Failed suite [Identify New Bikes] -->

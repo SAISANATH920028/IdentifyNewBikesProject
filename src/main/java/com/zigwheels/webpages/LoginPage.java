@@ -1,12 +1,16 @@
 package com.zigwheels.webpages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.zigwheels.base.Base;
+import com.zigwheels.utils.Highlighter;
 
 public class LoginPage extends Base {
+	Highlighter highlighter = new Highlighter();
+
 	By lclose = By.id("alternate-login-close");
 	By login = By.id("des_lIcon");
 
@@ -20,7 +24,9 @@ public class LoginPage extends Base {
 	public void clickLogin() {
 		logger = report.createTest("Clicking on Login");
 		try {
+
 			driver.findElement(login).click();
+
 			Thread.sleep(5000);
 			String login1 = "Login/Register to";
 			String ver = driver.findElement(By.xpath(
@@ -36,7 +42,7 @@ public class LoginPage extends Base {
 	// Method to click on GoogleSignIn
 	public void clickGoogleSignIn() throws InterruptedException {
 		logger = report.createTest("Error Checking after signup");
-		WebDriverWait wait = new WebDriverWait(driver, 15);
+		WebDriverWait wait = new WebDriverWait(driver, 25);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(googleSignIn));
 		driver.findElement(googleSignIn).click();
 		// Thread.sleep(5000);

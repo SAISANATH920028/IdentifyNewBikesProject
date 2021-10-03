@@ -70,7 +70,7 @@ public class Base {
 	 * Base method to open the zigwheel web application
 	 ******************/
 	public void openUrl() {
-		logger = report.createTest("Opening Url");
+		logger = report.createTest("Opening the URL");
 		try {
 			String s = prop.getProperty("url");
 			driver.get(s);
@@ -103,7 +103,6 @@ public class Base {
 	}
 
 	/*********** Method to take the screenshots on failed cases ******************/
-
 	public void takeScreenShotOnFailure() {
 
 		TakesScreenshot takeScreenshot = (TakesScreenshot) driver;

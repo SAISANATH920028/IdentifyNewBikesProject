@@ -73,23 +73,23 @@ public class HondaDetails extends Base {
 	 ******************/
 	public void selectManufacturer() {
 		logger = report.createTest("Honda Manufacturer");
-		
+
 		try {
 			WebElement drop = driver.findElement(smanuf);
 			highlighter.highlightElement(driver, drop);
 
-			//Thread.sleep(1000);
+			// Thread.sleep(1000);
 
 			Select select = new Select(drop);
 			select.selectByValue("53");
-			
-			//highlighter.removeHighlight(driver, drop);
-			
+
+			// highlighter.removeHighlight(driver, drop);
+
 			WebDriverWait wait = new WebDriverWait(driver, 15);
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[10]/ol/li[3]/span")));
-			
+
 			String str1 = driver.findElement(By.xpath("/html/body/div[10]/ol/li[3]/span")).getText();
-			
+
 			if (str1.contains("Honda Bikes"))
 				reportPass("Manufacturer is HONDA");
 		} catch (Exception e) {
@@ -137,7 +137,7 @@ public class HondaDetails extends Base {
 		}
 		count = bikeNames.size();
 		String priceTxt;
-		System.out.println("\n" + "--------------------------------------------------------");
+		System.out.println("\n" + "-------------------------------------------------");
 		System.out.println("Upcoming honda bike details:");
 		System.out.println("--------------------------------------------------------");
 
@@ -157,7 +157,7 @@ public class HondaDetails extends Base {
 					 */
 				}
 			}
-			reportPass("Bike Prices are Obtained");
+			reportPass("Bike prices are obtained");
 		} catch (Exception e) {
 			reportFail(e.getMessage());
 		}

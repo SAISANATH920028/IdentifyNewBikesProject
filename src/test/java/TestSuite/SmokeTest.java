@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import com.zigwheels.webpages.HomePage;
 
 public class SmokeTest {
-	@Test
+	
 	public void testing() {
 		HomePage hd = new HomePage();
 
